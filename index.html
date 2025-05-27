@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Palace - Hôtel de Luxe</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.avif" alt="Luxury Palace">
+                <span>Luxury Palace</span>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#home" class="active">Accueil</a></li>
+                    <li><a href="#rooms">Chambres & Suites</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#restaurant-section">Restaurant</a></li>
+                    <li><a href="#spa-section">Spa</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button class="btn btn-reserve">Réserver</button>
+                <div class="language-selector">
+                    <span>FR</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Image après la navbar -->
+    <div class="hero-image">
+        <img src="images/de.avif" alt="Lobby de l'hôtel Luxury Palace">
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Bienvenue au <span>Luxury Palace</span></h1>
+            <p>Un havre de paix et d'élégance au cœur de la ville</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary">Nos Chambres</button>
+                <button class="btn btn-secondary">Découvrir</button>
+            </div>
+        </div>
+        <div class="booking-widget">
+            <h3>Réservez votre séjour</h3>
+            <form>
+                <div class="form-group">
+                    <label for="check-in">Arrivée</label>
+                    <input type="date" id="check-in">
+                </div>
+                <div class="form-group">
+                    <label for="check-out">Départ</label>
+                    <input type="date" id="check-out">
+                </div>
+                <div class="form-group">
+                    <label for="guests">Adultes</label>
+                    <select id="guests">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Vérifier disponibilité</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="container">
+            <div class="about-content">
+                <h2>Un hôtel d'exception</h2>
+                <p>Fondé en 1920, le Luxury Palace allie tradition et modernité pour offrir à ses hôtes une expérience inoubliable. Notre établissement 5 étoiles a été récompensé à plusieurs reprises pour son excellence.</p>
+                <ul class="features-list">
+                    <li><i class="fas fa-wifi"></i> WiFi haut débit gratuit</li>
+                    <li><i class="fas fa-swimming-pool"></i> Piscine intérieure chauffée</li>
+                    <li><i class="fas fa-spa"></i> Spa luxueux</li>
+                    <li><i class="fas fa-utensils"></i> Restaurant gastronomique</li>
+                </ul>
+                <button class="btn btn-outline">Découvrir notre histoire</button>
+            </div>
+            <div class="about-image">
+                <img src="images/hotel.avif" alt="Notre hôtel">
+                <div class="experience-badge">
+                    <span>25+</span>
+                    <p>Années d'expérience</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rooms Section -->
+    <section class="rooms" id="rooms">
+        <div class="section-header">
+            <h2>Nos Chambres & Suites</h2>
+            <p>Découvrez nos hébergements luxueux conçus pour votre confort absolu</p>
+        </div>
+        <div class="rooms-grid">
+            <div class="room-card">
+                <img src="images/cham1.avif" alt="Chambre Deluxe">
+                <div class="room-info">
+                    <h3>Chambre Deluxe</h3>
+                    <p class="price">À partir de <span>€250</span> / nuit</p>
+                    <ul class="room-features">
+                        <li><i class="fas fa-ruler-combined"></i> 35 m²</li>
+                        <li><i class="fas fa-bed"></i> 1 lit king-size</li>
+                        <li><i class="fas fa-user-friends"></i> 2 personnes</li>
+                    </ul>
+                    <button class="btn btn-small">Voir détails</button>
+                </div>
+            </div>
+            <div class="room-card">
+                <img src="images/cham2.avif" alt="Suite Junior">
+                <div class="room-info">
+                    <h3>Suite Junior</h3>
+                    <p class="price">À partir de <span>€380</span> / nuit</p>
+                    <ul class="room-features">
+                        <li><i class="fas fa-ruler-combined"></i> 55 m²</li>
+                        <li><i class="fas fa-bed"></i> 1 lit king-size</li>
+                        <li><i class="fas fa-user-friends"></i> 2 personnes</li>
+                    </ul>
+                    <button class="btn btn-small">Voir détails</button>
+                </div>
+            </div>
+            <div class="room-card">
+                <img src="images/cham3.avif" alt="Suite Présidentielle">
+                <div class="room-info">
+                    <h3>Suite Présidentielle</h3>
+                    <p class="price">À partir de <span>€650</span> / nuit</p>
+                    <ul class="room-features">
+                        <li><i class="fas fa-ruler-combined"></i> 120 m²</li>
+                        <li><i class="fas fa-bed"></i> 1 lit king-size + salon</li>
+                        <li><i class="fas fa-user-friends"></i> 2-4 personnes</li>
+                    </ul>
+                    <button class="btn btn-small">Voir détails</button>
+                </div>
+            </div>
+        </div>
+        <div class="section-footer">
+            <button class="btn btn-primary">Voir toutes les chambres</button>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="section-header">
+            <h2>Nos Services Exclusifs</h2>
+            <p>Découvrez les services qui feront de votre séjour une expérience mémorable</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-concierge-bell"></i>
+                </div>
+                <h3>Service Concierge</h3>
+                <p>Notre concierge se charge de toutes vos demandes pour un séjour sans souci.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-car"></i>
+                </div>
+                <h3>Transferts Privés</h3>
+                <p>Voiture avec chauffeur disponible 24h/24 pour vos déplacements.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-umbrella-beach"></i>
+                </div>
+                <h3>Plage Privée</h3>
+                <p>Accès exclusif à notre plage privée avec service de cabines.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-dumbbell"></i>
+                </div>
+                <h3>Centre de Fitness</h3>
+                <p>Salle de sport équipée avec coach personnel sur demande.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Restaurant Section -->
+    <section class="section" id="restaurant-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Notre Restaurant Gastronomique</h2>
+                <p>Une expérience culinaire exceptionnelle avec nos chefs étoilés</p>
+            </div>
+            <div class="restaurant-content">
+                <div class="restaurant-image">
+                    <img src="images/resto.avif" alt="Notre restaurant">
+                </div>
+                <div class="restaurant-info">
+                    <h3>Le Jardin des Délices</h3>
+                    <p>Notre restaurant propose une cuisine raffinée à base de produits locaux et de saison, préparée par notre chef étoilé Jean Dupont.</p>
+                    <ul class="restaurant-features">
+                        <li><i class="fas fa-clock"></i> Ouvert tous les jours de 7h à 23h</li>
+                        <li><i class="fas fa-utensils"></i> Petit-déjeuner, déjeuner et dîner</li>
+                        <li><i class="fas fa-wine-glass-alt"></i> Carte des vins exceptionnelle</li>
+                    </ul>
+                    <button class="btn btn-primary">Réserver une table</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Spa Section -->
+    <section class="section spa-section" id="spa-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Notre Spa Luxueux</h2>
+                <p>Un havre de paix pour votre bien-être</p>
+            </div>
+            <div class="spa-content">
+                <div class="spa-info">
+                    <h3>L'Espace Bien-être</h3>
+                    <p>Découvrez notre spa de 1000m² avec piscine intérieure, hammam, sauna et cabines de soins pour une expérience de détente totale.</p>
+                    <ul class="spa-features">
+                        <li><i class="fas fa-spa"></i> Soins visage et corps haut de gamme</li>
+                        <li><i class="fas fa-hot-tub"></i> Jacuzzi avec vue sur le jardin</li>
+                        <li><i class="fas fa-massage"></i> Massages personnalisés</li>
+                    </ul>
+                    <button class="btn btn-primary">Découvrir nos soins</button>
+                </div>
+                <div class="spa-image">
+                    <img src="images/spa.avif" alt="Notre spa">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="section-header">
+            <h2>Témoignages</h2>
+            <p>Ce que nos clients disent de nous</p>
+        </div>
+        <div class="testimonials-slider">
+            <div class="testimonial active">
+                <div class="testimonial-content">
+                    <p>"Un séjour absolument parfait. Le service est impeccable et l'attention aux détails est remarquable. Nous reviendrons certainement!"</p>
+                    <div class="client-info">
+                        <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Client">
+                        <div>
+                            <h4>Sophie Martin</h4>
+                            <span>Paris, France</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial">
+                <div class="testimonial-content">
+                    <p>"La suite présidentielle est tout simplement magnifique. La vue sur la ville est à couper le souffle et le spa est divin."</p>
+                    <div class="client-info">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Client">
+                        <div>
+                            <h4>Thomas Dubois</h4>
+                            <span>Genève, Suisse</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-nav">
+                <button class="prev"><i class="fas fa-chevron-left"></i></button>
+                <button class="next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Abonnez-vous à notre newsletter</h2>
+                <p>Recevez nos offres exclusives et actualités directement dans votre boîte mail.</p>
+            </div>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Votre adresse email">
+                <button type="submit" class="btn btn-primary">S'abonner</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-column">
+                <div class="logo">
+                    <img src="images/logo.png" alt="Luxury Palace">
+                    <span>Luxury Palace</span>
+                </div>
+                <p>123 Avenue des Champs-Élysées<br>75008 Paris, France</p>
+                <p>+33 1 23 45 67 89<br>contact@luxurypalace.com</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-tripadvisor"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Liens rapides</h3>
+                <ul>
+                    <li><a href="#home">Accueil</a></li>
+                    <li><a href="#rooms">Chambres & Suites</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#restaurant-section">Restaurant</a></li>
+                    <li><a href="#spa-section">Spa</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="#">Réserver en ligne</a></li>
+                    <li><a href="#">Demande de devis</a></li>
+                    <li><a href="#">Événements & Mariages</a></li>
+                    <li><a href="#">Offres spéciales</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Informations légales</h3>
+                <ul>
+                    <li><a href="#">Conditions générales</a></li>
+                    <li><a href="#">Politique de confidentialité</a></li>
+                    <li><a href="#">Cookies</a></li>
+                    <li><a href="#">Mentions légales</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Luxury Palace. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
