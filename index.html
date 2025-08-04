@@ -7,6 +7,44 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Styles temporaires pour la démo - à intégrer dans votre fichier CSS */
+        .mobile-reserve-btn {
+            display: none;
+        }
+
+        @media (max-width: 992px) {
+            .header-actions .btn-reserve {
+                display: none;
+            }
+            
+            .mobile-reserve-btn {
+                display: block;
+                padding: 10px 15px;
+            }
+            
+            .mobile-reserve-btn .btn-reserve {
+                width: 100%;
+                text-align: center;
+                background-color: #b8860b;
+                color: white;
+                font-weight: bold;
+                padding: 12px 0;
+                border-radius: 4px;
+                margin: 10px 0;
+            }
+            
+            .mobile-reserve-btn .btn-reserve:hover {
+                background-color: #daa520;
+            }
+        }
+
+        @media (min-width: 993px) {
+            .mobile-reserve-btn {
+                display: none !important;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Header -->
@@ -19,11 +57,12 @@
             <nav class="navbar">
                 <ul>
                     <li><a href="#home" class="active">Accueil</a></li>
-                    <li><a href="#rooms">Chambres </a></li>
+                    <li><a href="#rooms">Chambres</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#restaurant-section">Restaurant</a></li>
                     <li><a href="#spa-section">Spa</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <li class="mobile-reserve-btn"><button class="btn btn-reserve">Réserver</button></li>
                 </ul>
             </nav>
             <div class="header-actions">
@@ -77,7 +116,6 @@
                 <button type="submit" class="btn btn-primary">Vérifier disponibilité</button>
             </form>
         </div>
-
     </section>
 
     <!-- About Section -->
@@ -345,7 +383,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2023 Luxury Palace. Tous droits réservés.</p>
+            <p>&copy; 2025 Luxury Palace. Tous droits réservés.</p>
         </div>
     </footer>
 
